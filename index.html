@@ -53,13 +53,13 @@
     </div>   
   </div>
   <!-- Карточка товара -->
-<div class="card">
+<div class="card" v-for="card in cards" id="card">
   <!-- Верхняя часть -->
   <div class="card__top">
     <!-- Изображение-ссылка товара -->
     <a href="#" class="card__image">
       <img
-        src="./image/iphone-14-pro-max-gold.png"
+        src={{image}}
         alt="Apple IPhone 14 PRO Max Gold"
       />
     </a>
@@ -68,7 +68,7 @@
   <div class="card__bottom">
     <!-- Цены на товар (с учетом скидки и без)-->
     <div class="card__prices">
-      <div class="card__price card__price--discount">Новость за вчера</div>
+      <div class="card__price card__price--discount">{{date}}</div>
     </div>
     <!-- Ссылка-название товара -->
     <a class="card__title">
@@ -81,6 +81,6 @@
 </div>
   </div>
 </body>
-<script src="./js/vue.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="./js/index.js"></script>
 </html>
