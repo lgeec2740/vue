@@ -1,0 +1,35 @@
+.header{
+    background-color: rgb(253, 4, 4);
+    
+}
+.header-top{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-image: url("../image/back-top.jpg");
+}
+.header-title{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.355);
+}
+.header-link{
+    font-size: 30px;
+    display: flex;
+    height: max-content;
+}
+.header-link a{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    
+}
